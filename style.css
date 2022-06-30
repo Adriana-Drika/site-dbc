@@ -110,6 +110,7 @@ main {
     display: flex;
     margin-top: 20px;
     justify-content: space-between;
+    align-items: flex-start;    
 }
 
 .noticias-recentes {
@@ -128,7 +129,7 @@ main {
     box-shadow: 0px 1px 2px 2px rgb(0 0 0 / 8%);
 }
 
-.noticias-recentes-header {
+.main-header {
     line-height: 50px;
     font-size: 12px;
     padding: 0px 15px;
@@ -178,6 +179,40 @@ img.noticia-img {
 .card-footer {
     display: flex;
     justify-content: space-between;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 15px;
+    gap: 15px;
+}
+
+.container-grid button {
+    height: 100px;
+    background: white;
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgb(0 0 0 / 10%);
+    border-radius: 3px;
+    font-size: 12px;
+    color: #33A76F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-grid button:hover{ 
+    color: #fff !important;
+    text-decoration: none;
+    background: #2ba962;
+    background: -webkit-gradient(left top, right top, color-stop(0%, #2ba962), color-stop(98%, #2e6a99), color-stop(100%, #2e6a99));
+    background: linear-gradient(to right, #2ba962 0%, #2e6a99 98%, #2e6a99 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ba962', endColorstr='#2e6a99', GradientType=1);
+}
+
+.container-grid i {
+    font-size: 30px;
 }
 
 /* main */
